@@ -7,8 +7,12 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="abc">abc</div>
-    <div class="def"><p class="p">def</p></div>
+    <div>
+      <div class="a1">A1</div>
+    </div>
+    <div>
+      <div class="a2">A2</div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.6.3.js"
@@ -16,7 +20,10 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $("div:has(p)").css("background", "#f0a6b8");
+      $("div").has(".a1");
+    </script>
+    <script>
+      $("div").has(".a1").css("background", "red");
     </script>
   </body>
 </html>
