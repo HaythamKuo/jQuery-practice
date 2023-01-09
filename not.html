@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box">box1</div>
+      <div class="box">box1</div>
+      <div class="box">box1</div>
+      <div class="box">box1</div>
+      <div class="box">box1</div>
+      <div class="box">box1</div>
+    </div>
+
+    <div class="wrap2">
+      <span>span11</span>
+      <div class="box">box1</div>
+      <div class="box">box1</div>
+      <div class="box">box1</div>
+      <div class="box">box1</div>
+      <div class="box">box1</div>
+      <div class="box">box1</div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("input:not(:checked)+span").css("background", "#fdb5fc"); //有反轉意味
+    </script>
+    <script>
+      $(".box:first-child").css("background", "#887546"); //前面是範圍 後面是條件(需在範圍內) 會先選出範圍 跟eq不太依樣 是看結構
+      $(".box:eq(2)").css("background", "#c8da20"); //eq是看順序
+      $(".box:first-of-type").css("background", "#adda9c"); //只看type選取
+    </script>
+  </body>
+</html>

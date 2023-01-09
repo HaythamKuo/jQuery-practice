@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: #faf;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1" class="box">box</div>
+    <div class="box active">box width active</div>
+    <a href="#" target="_blank" rel="noopener noreferrer">links</a>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".box").css("width", "500px");
+      $(".box.active").css("background-color", "green"); //class選擇器
+      $("#box1").css("background", "gray"); //id選擇器
+      $("a[href='#']").css("font-size", "5rem"); //可以指定需要拿一個網頁
+      $("#box1, .box.active, a[href='#']").css("color", "yellow");
+    </script>
+  </body>
+</html>
