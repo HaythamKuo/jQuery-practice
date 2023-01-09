@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      /* .box:nth-child(2){
+            background-color: #382097;
+        } */
+    </style>
   </head>
   <body>
     <div class="wrap">
@@ -25,6 +30,9 @@
       <div class="box">box1</div>
       <div class="box">box1</div>
     </div>
+    <div class="wrap3">
+      <div class="box">wrap3 box1</div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.6.3.js"
       integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
@@ -37,6 +45,9 @@
       $(".box:first-child").css("background", "#887546"); //前面是範圍 後面是條件(需在範圍內) 會先選出範圍 跟eq不太依樣 是看結構
       $(".box:eq(2)").css("background", "#c8da20"); //eq是看順序
       $(".box:first-of-type").css("background", "#adda9c"); //只看type選取
+      $(".box:nth-child(2)").css("background", "#382097"); //第n個開始-預設從1開始
+      $(".box:nth-last-child(2)").css("background", "#40e2ca"); //跟上面相反
+      $(".box:nth-of-type(1)").css("background", "#54552d"); //???
     </script>
   </body>
 </html>
