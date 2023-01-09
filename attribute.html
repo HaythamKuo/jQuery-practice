@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .pic {
+        width: 500px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <a
+      href="https://bootstrap5.hexschool.com/docs/5.1/getting-started/introduction/"
+      >bootstrap</a
+    >
+    <img
+      class="pic"
+      src="https://images.unsplash.com/photo-1673212815589-427fdb2eaaea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+      alt=""
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      console.log("a href:", $("a").attr("href"));
+      console.log("img src", $("img").attr("src"));
+      const myImg =
+        "https://images.unsplash.com/photo-1673245137845-a9021aede7ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80";
+      $("img").attr("src", myImg); //會更換圖片
+    </script>
+  </body>
+</html>
