@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="">
+      <label for="">user</label>
+      <input type="text" />
+
+      <select name="city" id="city">
+        <option value="0">台北</option>
+        <option value="1">台中</option>
+        <option value="2">台南</option>
+      </select>
+      <button type="submit">送出</button>
+    </form>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("form").submit(function () {
+        event.preventDefault();
+        console.log("form submit");
+      });
+
+      $("input").focus(function () {
+        console.log("input focus");
+      });
+      $("input").focus(function () {
+        console.log("input blur");
+      });
+      $("#city").change(function () {
+        console.log("change");
+      });
+      $("input").on("input", function () {
+        console.log("input", $("event.targey").val());
+      });
+    </script>
+  </body>
+</html>
