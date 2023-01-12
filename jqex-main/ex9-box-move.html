@@ -92,6 +92,12 @@
           $(".box").css("left", `-=${movement}`);
         }
       });
+
+      $(document).keydown(function () {
+        console.log("event:", event.keyCode);
+        if (event.keyCode === "ArrowLeft") {
+        }
+      });
     </script>
   </body>
 </html>
