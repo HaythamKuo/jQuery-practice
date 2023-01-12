@@ -94,6 +94,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      let lastScroll = 0;
       $(window).scroll(function () {
         console.log("scrollTop", $(window).scrollTop());
         const nowScroll = $(window).scrollTop();
